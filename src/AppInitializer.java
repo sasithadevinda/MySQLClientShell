@@ -1,6 +1,7 @@
 package src;
 
 import javafx.application.Application;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -11,6 +12,8 @@ import java.io.IOException;
 public class AppInitializer extends Application {
 
     public static void main(String[] args) {
+        //System.out.println("ABC");
+
         launch(args);
     }
 
@@ -24,6 +27,5 @@ public class AppInitializer extends Application {
         primaryStage.centerOnScreen();
         primaryStage.show();
         primaryStage.centerOnScreen();
-
     }
 }
