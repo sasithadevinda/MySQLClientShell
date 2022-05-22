@@ -27,10 +27,10 @@ public class ShellFormController {
                 "-u", userName,
                 "--port", port,
                 "-p",
-                "-n",           // <- This is important (https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html#option_mysql_unbuffered)
-                "-L",           // <- This is important (https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html#option_mysql_skip-line-numbers)
-                "-f",           // <- This is important (https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html#option_mysql_force)
-                "-v",           // <- This is important (https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html#option_mysql_verbose)
+                "-n",
+                "-L",
+                "-f",
+                "-v",
                 "-v",
                 "-v");
         try {
@@ -113,7 +113,7 @@ public class ShellFormController {
                             txtOutput.setText("Welcome to DEP-8 MySQL Client Shell\n" +
                                     "----------------------------------------\n\n" +
                                     "Please enter your command above to proceed.\nThank you! \uD83D\uDE09" +
-                                    "\n\nCopyright © 2022 DEP8 IJSE. All Rights Reserved.\n");
+                                    "\n\nCopyright © 2022 DEP8 . All Rights Reserved.\n");
                         }
                     });
                 }

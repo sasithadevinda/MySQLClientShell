@@ -30,7 +30,7 @@ public class LoginFormController {
 
     public void btnConnect_OnAction(ActionEvent event) {
 
-        /* Let's validate some inputs */
+
         if (txtHost.getText().trim().isEmpty()) {
             new Alert(Alert.AlertType.ERROR, "Host can't be empty").show();
             txtHost.requestFocus();
@@ -49,18 +49,7 @@ public class LoginFormController {
         }
 
         try {
-//            String command = String.format("mysql -h %s -u %s -p%s --port %s -e exit",
-//                    txtHost.getText(),
-//                    txtUserName.getText(),
-//                    txtPassword.getText(),
-//                    txtPort.getText());
-//            String[] commands = {"mysql",
-//                    "-h", txtHost.getText(),
-//                    "-u", txtUserName.getText(),
-//                    "--port", txtPort.getText(),
-//                    "-p" + txtPassword.getText(),
-//                    "-e", "exit"};
-//            Process mysql = Runtime.getRuntime().exec(commands);
+//
 
             Process mysql = new ProcessBuilder("mysql",
                     "-h", txtHost.getText(),
